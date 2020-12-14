@@ -1,0 +1,775 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.0.3-Girona" projectname="">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+      <srsid>3857</srsid>
+      <srid>3857</srid>
+      <authid>EPSG:3857</authid>
+      <description>WGS 84 / Pseudo Mercator</description>
+      <projectionacronym>merc</projectionacronym>
+      <ellipsoidacronym>WGS84</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer expanded="1" name="nodes" id="nodes_d279a68c_949f_4011_a84f_51357d1d3120" checked="Qt::Checked" providerKey="ogr" source="./nodes.geojson">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" name="links" id="links_a198b7b7_d81d_4754_91f3_c97eee90868e" checked="Qt::Checked" providerKey="ogr" source="./links.geojson">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" name="googlemaps" id="googlemaps_b7e19608_ad1f_4d2c_9563_25f8bfd5f7dd" checked="Qt::Checked" providerKey="wms" source="type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dr%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>googlemaps_b7e19608_ad1f_4d2c_9563_25f8bfd5f7dd</item>
+      <item>nodes_d279a68c_949f_4011_a84f_51357d1d3120</item>
+      <item>links_a198b7b7_d81d_4754_91f3_c97eee90868e</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings mode="2" unit="1" type="1" enabled="0" intersection-snapping="0" tolerance="12">
+    <individual-layer-settings>
+      <layer-setting id="nodes_d279a68c_949f_4011_a84f_51357d1d3120" units="1" type="1" enabled="0" tolerance="12"/>
+      <layer-setting id="links_a198b7b7_d81d_4754_91f3_c97eee90868e" units="1" type="1" enabled="0" tolerance="12"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+    <units>meters</units>
+    <extent>
+      <xmin>145027.76719028624938801</xmin>
+      <ymin>5729736.06709975190460682</ymin>
+      <xmax>164571.78316392429405823</xmax>
+      <ymax>5785738.71613993309438229</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+        <srsid>3857</srsid>
+        <srid>3857</srid>
+        <authid>EPSG:3857</authid>
+        <description>WGS 84 / Pseudo Mercator</description>
+        <projectionacronym>merc</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer showFeatureCount="0" name="nodes" checked="Qt::Checked" drawingOrder="-1" open="true">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="nodes_d279a68c_949f_4011_a84f_51357d1d3120"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer showFeatureCount="0" name="links" checked="Qt::Checked" drawingOrder="-1" open="true">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="links_a198b7b7_d81d_4754_91f3_c97eee90868e"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer showFeatureCount="0" name="googlemaps" checked="Qt::Checked" drawingOrder="-1" open="true">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="googlemaps_b7e19608_ad1f_4d2c_9563_25f8bfd5f7dd"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <projectlayers>
+    <maplayer hasScaleBasedVisibilityFlag="0" maxScale="0" minScale="1e+8" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" type="raster" autoRefreshEnabled="0" autoRefreshTime="0">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278925508260727</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <id>googlemaps_b7e19608_ad1f_4d2c_9563_25f8bfd5f7dd</id>
+      <datasource>type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dr%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>googlemaps</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+        <links/>
+      </resourceMetadata>
+      <customproperties>
+        <property value="Undefined" key="identify/format"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" type="singlebandcolordata" alphaBand="-1" band="1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation colorizeBlue="128" colorizeGreen="128" colorizeRed="255" saturation="0" colorizeOn="0" grayscaleMode="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" labelsEnabled="0" simplifyLocal="1" simplifyMaxScale="1" readOnly="0" maxScale="0" minScale="1e+8" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" type="vector" geometry="Line" simplifyDrawingTol="1" autoRefreshEnabled="0" autoRefreshTime="0" simplifyAlgorithm="0">
+      <extent>
+        <xmin>1.07810600000000001</xmin>
+        <ymin>45.75064299999999662</ymin>
+        <xmax>1.42003499999999994</xmax>
+        <ymax>45.97019699999999887</ymax>
+      </extent>
+      <id>links_a198b7b7_d81d_4754_91f3_c97eee90868e</id>
+      <datasource>./links.geojson</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>links</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+        <links/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol name="0" type="line" alpha="1" clip_to_extent="1">
+            <layer locked="0" pass="0" enabled="1" class="SimpleLine">
+              <prop v="square" k="capstyle"/>
+              <prop v="5;2" k="customdash"/>
+              <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+              <prop v="MM" k="customdash_unit"/>
+              <prop v="0" k="draw_inside_polygon"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="111,8,207,255" k="line_color"/>
+              <prop v="solid" k="line_style"/>
+              <prop v="0.26" k="line_width"/>
+              <prop v="MM" k="line_width_unit"/>
+              <prop v="0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="0" k="use_custom_dash"/>
+              <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <fieldConfiguration>
+        <field name="index">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="a">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="trip_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="link_sequence">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="departure_time">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="b">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="arrival_time">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="time">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="route_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="direction_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="trip_headsign">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="trip_short_name">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="block_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="shape_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="service_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="route_long_name">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="route_short_name">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="route_type">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="route_color">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" index="0" field="index"/>
+        <alias name="" index="1" field="a"/>
+        <alias name="" index="2" field="trip_id"/>
+        <alias name="" index="3" field="link_sequence"/>
+        <alias name="" index="4" field="departure_time"/>
+        <alias name="" index="5" field="b"/>
+        <alias name="" index="6" field="arrival_time"/>
+        <alias name="" index="7" field="time"/>
+        <alias name="" index="8" field="route_id"/>
+        <alias name="" index="9" field="direction_id"/>
+        <alias name="" index="10" field="trip_headsign"/>
+        <alias name="" index="11" field="trip_short_name"/>
+        <alias name="" index="12" field="block_id"/>
+        <alias name="" index="13" field="shape_id"/>
+        <alias name="" index="14" field="service_id"/>
+        <alias name="" index="15" field="route_long_name"/>
+        <alias name="" index="16" field="route_short_name"/>
+        <alias name="" index="17" field="route_type"/>
+        <alias name="" index="18" field="route_color"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default applyOnUpdate="0" field="index" expression=""/>
+        <default applyOnUpdate="0" field="a" expression=""/>
+        <default applyOnUpdate="0" field="trip_id" expression=""/>
+        <default applyOnUpdate="0" field="link_sequence" expression=""/>
+        <default applyOnUpdate="0" field="departure_time" expression=""/>
+        <default applyOnUpdate="0" field="b" expression=""/>
+        <default applyOnUpdate="0" field="arrival_time" expression=""/>
+        <default applyOnUpdate="0" field="time" expression=""/>
+        <default applyOnUpdate="0" field="route_id" expression=""/>
+        <default applyOnUpdate="0" field="direction_id" expression=""/>
+        <default applyOnUpdate="0" field="trip_headsign" expression=""/>
+        <default applyOnUpdate="0" field="trip_short_name" expression=""/>
+        <default applyOnUpdate="0" field="block_id" expression=""/>
+        <default applyOnUpdate="0" field="shape_id" expression=""/>
+        <default applyOnUpdate="0" field="service_id" expression=""/>
+        <default applyOnUpdate="0" field="route_long_name" expression=""/>
+        <default applyOnUpdate="0" field="route_short_name" expression=""/>
+        <default applyOnUpdate="0" field="route_type" expression=""/>
+        <default applyOnUpdate="0" field="route_color" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" exp_strength="0" field="index" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="a" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="trip_id" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="link_sequence" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="departure_time" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="b" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="arrival_time" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="time" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="route_id" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="direction_id" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="trip_headsign" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="trip_short_name" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="block_id" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="shape_id" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="service_id" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="route_long_name" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="route_short_name" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="route_type" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" exp_strength="0" field="route_color" constraints="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" field="index" desc=""/>
+        <constraint exp="" field="a" desc=""/>
+        <constraint exp="" field="trip_id" desc=""/>
+        <constraint exp="" field="link_sequence" desc=""/>
+        <constraint exp="" field="departure_time" desc=""/>
+        <constraint exp="" field="b" desc=""/>
+        <constraint exp="" field="arrival_time" desc=""/>
+        <constraint exp="" field="time" desc=""/>
+        <constraint exp="" field="route_id" desc=""/>
+        <constraint exp="" field="direction_id" desc=""/>
+        <constraint exp="" field="trip_headsign" desc=""/>
+        <constraint exp="" field="trip_short_name" desc=""/>
+        <constraint exp="" field="block_id" desc=""/>
+        <constraint exp="" field="shape_id" desc=""/>
+        <constraint exp="" field="service_id" desc=""/>
+        <constraint exp="" field="route_long_name" desc=""/>
+        <constraint exp="" field="route_short_name" desc=""/>
+        <constraint exp="" field="route_type" desc=""/>
+        <constraint exp="" field="route_color" desc=""/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" labelsEnabled="1" simplifyLocal="1" simplifyMaxScale="1" readOnly="0" maxScale="0" minScale="1e+8" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" type="vector" geometry="Point" simplifyDrawingTol="1" autoRefreshEnabled="0" autoRefreshTime="0" simplifyAlgorithm="0">
+      <extent>
+        <xmin>1.07810600000000001</xmin>
+        <ymin>45.75064299999999662</ymin>
+        <xmax>1.42003499999999994</xmax>
+        <ymax>45.97019699999999887</ymax>
+      </extent>
+      <id>nodes_d279a68c_949f_4011_a84f_51357d1d3120</id>
+      <datasource>./nodes.geojson</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>nodes</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" minz="0" maxz="0" minx="0" dimensions="2" maxx="0" crs="" miny="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol name="0" type="marker" alpha="1" clip_to_extent="1">
+            <layer locked="0" pass="0" enabled="1" class="SimpleMarker">
+              <prop v="0" k="angle"/>
+              <prop v="109,185,84,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="2" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <labeling type="simple">
+        <settings>
+          <text-style fontStrikeout="0" fontWordSpacing="0" fontFamily="MS Shell Dlg 2" fontSize="10" useSubstitutions="0" fontItalic="0" textColor="0,0,0,255" fontWeight="50" namedStyle="Normal" fontUnderline="0" fontSizeUnit="Point" fontCapitals="0" isExpression="0" textOpacity="1" fontLetterSpacing="0" blendMode="0" previewBkgrdColor="#ffffff" multilineHeight="1" fieldName="index" fontSizeMapUnitScale="3x:0,0,0,0,0,0">
+            <text-buffer bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="MM" bufferOpacity="1" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferNoFill="1" bufferSize="1" bufferBlendMode="0"/>
+            <background shapeOffsetY="0" shapeRadiiUnit="MM" shapeOffsetUnit="MM" shapeBorderColor="128,128,128,255" shapeRotation="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeSVGFile="" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetX="0" shapeType="0" shapeSizeX="0" shapeRadiiY="0" shapeSizeUnit="MM" shapeBlendMode="0" shapeRadiiX="0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeSizeY="0" shapeOpacity="1" shapeFillColor="255,255,255,255" shapeBorderWidthUnit="MM" shapeBorderWidth="0"/>
+            <shadow shadowScale="100" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0.7" shadowOffsetDist="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowRadiusAlphaOnly="0" shadowColor="0,0,0,255" shadowBlendMode="6" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="1.5" shadowOffsetGlobal="1" shadowRadiusUnit="MM"/>
+            <substitutions/>
+          </text-style>
+          <text-format wrapChar="" multilineAlign="3" formatNumbers="0" leftDirectionSymbol="&lt;" reverseDirectionSymbol="0" placeDirectionSymbol="0" decimals="3" rightDirectionSymbol=">" plussign="0" addDirectionSymbol="0"/>
+          <placement yOffset="0" quadOffset="4" repeatDistance="0" centroidInside="0" priority="5" repeatDistanceUnits="MM" centroidWhole="0" offsetUnits="MM" maxCurvedCharAngleIn="25" distUnits="MM" xOffset="0" distMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleOut="-25" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" fitInPolygonOnly="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="0" placementFlags="10" preserveRotation="1" dist="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" rotationAngle="0"/>
+          <rendering fontMaxPixelSize="10000" obstacleFactor="1" mergeLines="0" fontMinPixelSize="3" labelPerPart="0" displayAll="0" scaleMin="0" obstacle="1" fontLimitPixelSize="0" drawLabels="1" scaleVisibility="0" maxNumLabels="2000" zIndex="0" minFeatureSize="0" obstacleType="0" limitNumLabels="0" scaleMax="0" upsidedownLabels="0"/>
+          <dd_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </dd_properties>
+        </settings>
+      </labeling>
+      <customproperties>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory lineSizeType="MM" height="15" enabled="0" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" opacity="1" rotationOffset="270" labelPlacementMethod="XHeight" backgroundAlpha="255" scaleBasedVisibility="0" minScaleDenominator="0" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" penAlpha="255" penWidth="0" backgroundColor="#ffffff" maxScaleDenominator="1e+8" minimumSize="0" sizeType="MM" barWidth="5" penColor="#000000" width="15">
+          <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings placement="0" priority="0" dist="0" zIndex="0" showAll="1" linePlacementFlags="18" obstacle="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <fieldConfiguration>
+        <field name="index">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" index="0" field="index"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default applyOnUpdate="0" field="index" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" exp_strength="0" field="index" constraints="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" field="index" desc=""/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column name="index" width="-1" type="field" hidden="0"/>
+          <column width="-1" type="actions" hidden="1"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field name="index" editable="1"/>
+      </editable>
+      <labelOnTop>
+        <field name="index" labelOnTop="0"/>
+      </labelOnTop>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>index</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="googlemaps_b7e19608_ad1f_4d2c_9563_25f8bfd5f7dd"/>
+    <layer id="nodes_d279a68c_949f_4011_a84f_51357d1d3120"/>
+    <layer id="links_a198b7b7_d81d_4754_91f3_c97eee90868e"/>
+  </layerorder>
+  <properties>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+    <PAL>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <SearchMethod type="int">0</SearchMethod>
+    </PAL>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Measurement>
+      <DistanceUnits type="QString"></DistanceUnits>
+      <AreaUnits type="QString"></AreaUnits>
+    </Measurement>
+    <Gui>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+    </Gui>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <Annotations/>
+  <Layouts/>
+</qgis>

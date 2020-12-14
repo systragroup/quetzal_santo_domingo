@@ -1,0 +1,12 @@
+**__pycache__**
+*.pyc
+**.cache**
+**.pynb_checkpoints**
+
+model/*
+!model/preparation
+!model/transport
+!model/ref_18
+
+outputs/plot/detail/*
+json/*

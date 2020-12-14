@@ -1,0 +1,4 @@
+date,exception_type,service_id
+20180918,1,Martes
+20180922,1,Sabado
+20180923,1,Domingo

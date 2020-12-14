@@ -1,0 +1,2 @@
+monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date,service_id
+0,0,0,0,0,0,0,20180918,20180923,empty service for trips with no frequency defined

@@ -1,0 +1,4 @@
+  File "62_merge_stacks.py", line 32
+    parameter_frame[]
+                    ^
+SyntaxError: invalid syntax

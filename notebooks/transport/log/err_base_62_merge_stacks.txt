@@ -1,0 +1,9 @@
+sys:1: PerformanceWarning: indexing past lexsort depth may impact performance.
+Traceback (most recent call last):
+  File "62_merge_stacks.py", line 25, in <module>
+    parameter_frame[c] = parameter_frame[c].fillna(parameter_frame[parent])
+  File "C:\Users\qchasserieau\AppData\Local\Continuum\anaconda3\envs\quetzal_env\lib\site-packages\pandas\core\series.py", line 4535, in fillna
+    downcast=downcast,
+  File "C:\Users\qchasserieau\AppData\Local\Continuum\anaconda3\envs\quetzal_env\lib\site-packages\pandas\core\generic.py", line 6052, in fillna
+    '"value" parameter must be a scalar, dict '
+TypeError: "value" parameter must be a scalar, dict or Series, but you passed a "DataFrame"

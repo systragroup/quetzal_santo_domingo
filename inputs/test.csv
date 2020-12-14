@@ -1,0 +1,44 @@
+;route_short_name;route_type
+21;27_febrero_oeste;0
+38;ecologico;0
+37;mella;0
+35;tram_este;0
+18;tram_oeste;0
+22;m3;1
+41;m2;1
+17;m2_oeste;1
+16;m2_completo;1
+0;intrant;1
+42;m1;1
+1;quentin;1
+6;m2_este;1
+36;sanfelipe;3
+30;sitp_defillo;3
+29;sitp_lincoln;3
+9;sitp_ortega;3
+25;sitp_sabana_larga;3
+24;27_febrero;3
+23;sitp_venezuela;3
+10;sitp_prolongacion_27;3
+26;sitp_josefa;3
+7;sitp_tiradentes;3
+8;victoria;3
+11;sitp_cdg_oeste;3
+12;sitp_cdg_este;3
+14;sitp_churchill;3
+13;sitp_nunez;3
+20;independencia;3
+33;pantoja;5
+40;tele_este;6
+39;tele_alcarrizos;6
+2;Tele Oeste SDO;6
+3;Tele Oeste LA;6
+5;Tramo Alcarrizos L2;6
+32;monumental;6
+15;tele_norte;6
+19;herrera;6
+4;tramo SDO L2;6
+31;tele_oeste;6
+28;sitp_marzo;702
+27;sitp_duarte;702
+34;luperon;702
