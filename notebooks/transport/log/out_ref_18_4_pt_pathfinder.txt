@@ -1,2 +1,4 @@
 SQLalchemy is not installed. No support for SQL output.
-dropped broken sequences: ['MB_M66D_1', 'MB_M66D_2', 'MB_M66C_1']
+dropped broken sequences: ['MB_M66D_2', 'MB_M66D_1', 'MB_M66C_1']
+Pathfinder failed with prune=True. Trying with prune=False
+Pathfinder failed with prune=True. Trying with prune=False
