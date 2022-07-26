@@ -1,2 +1,2 @@
 SQLalchemy is not installed. No support for SQL output.
-['bus', 'minibus', 'subway', 'express_bus', 'tram', 'gondola', 'concho']
+['bus', 'tram', 'minibus', 'express_bus', 'subway', 'gondola', 'concho']

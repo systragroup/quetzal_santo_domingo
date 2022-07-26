@@ -8,5 +8,7 @@ model/*
 !model/transport
 !model/ref_18
 
+notebooks/transport/log/*
+
 outputs/plot/detail/*
 json/*

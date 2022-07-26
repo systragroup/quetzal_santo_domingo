@@ -1,2 +1,2 @@
 SQLalchemy is not installed. No support for SQL output.
-376
+{'tele_este': {'tele_este', 'm1', 'm2_completo', 'm2'}, 'm1': {'tele_este', 'm1', 'm2_completo', 'm2'}, 'm2_completo': {'tele_este', 'm1', 'm2_completo', 'm2'}, 'm2': {'tele_este', 'm1', 'm2_completo', 'm2'}}
